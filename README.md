@@ -7,7 +7,7 @@ Here a modest list of hooks that I use every day. I will add more next few days,
 
 ## Hooks
 
-### `useFullscreen` - (View code)
+### `useFullscreen` - [View code](https://github.com/stevenpersia/captain-hook/blob/master/useFullscreen.js)
 
 Useful hook if you want to fullscreen an element of your page.
 
@@ -28,9 +28,9 @@ const { elementFS, triggerFS, exitFS, isFS } = useFullscreen();
 Then use like this :
 
 ```html
-<div ref="{elementFS}">I want to fullscreen this div.</div>
-<button onClick="{triggerFS}">Trigger fullscreen</button>
-<button onClick="{exitFS}">Exit fullscreen</button>
+<div ref={elementFS}>I want to fullscreen this div.</div>
+<button onClick={triggerFS}>Trigger fullscreen</button>
+<button onClick={exitFS}>Exit fullscreen</button>
 ```
 
 Check if fullscreen is triggered :
@@ -45,7 +45,7 @@ SOON...
 
 ---
 
-### `useHover` - (View code)
+### `useHover` - [View code](https://github.com/stevenpersia/captain-hook/blob/master/useHover.js)
 
 Useful hook if you want to detect when the mouse is hovering an element.
 
@@ -66,7 +66,7 @@ const [hoverRef, isHovered] = useHover();
 Then use like this :
 
 ```html
-<div ref="{hoverRef}">{isHovered ? "Hovered !" : "Hover me !"}</div>
+<div ref={hoverRef}>{isHovered ? "Hovered !" : "Hover me !"}</div>
 ```
 
 #### Demo
@@ -75,7 +75,7 @@ SOON...
 
 ---
 
-### `useKeyPress` - (View code)
+### `useKeyPress` - [View code](https://github.com/stevenpersia/captain-hook/blob/master/useKeyPress.js)
 
 Useful hook if you want to detect when user is pressing a specific key.
 
@@ -102,7 +102,7 @@ SOON...
 
 ---
 
-### `useSlug` - (View code)
+### `useSlug` - [View code](https://github.com/stevenpersia/captain-hook/blob/master/useSlug.js)
 
 Useful hook if you want to slug content for urls.
 
@@ -127,7 +127,7 @@ SOON...
 
 ---
 
-### `useTitle` - (View code)
+### `useTitle` - [View code](https://github.com/stevenpersia/captain-hook/blob/master/useTitle.js)
 
 Useful hook if you want to set a specific title to page.
 
