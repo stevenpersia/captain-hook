@@ -127,6 +127,31 @@ SOON...
 
 ---
 
+### `useSwap` - [View code](https://github.com/stevenpersia/captain-hook/blob/master/useSwap.js)
+
+Useful hook if you want to swap the keys and values of a given object.
+
+#### How to use
+
+Import hook :
+
+```js
+import useSwap from "hooks/useSwap";
+```
+
+Then use like this :
+
+```js
+useSwap({ name : "A" , init : "bootstrap"  });
+// → {A: "name", bootstrap: "init"}
+```
+
+#### Demo
+
+SOON...
+
+---
+
 ### `useTitle` - [View code](https://github.com/stevenpersia/captain-hook/blob/master/useTitle.js)
 
 Useful hook if you want to set a specific title to page.
