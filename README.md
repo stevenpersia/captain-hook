@@ -22,7 +22,7 @@ import useFetch from "hooks/useFetch";
 Then use like this :
 
 ```js
-const { response, errors } = useFetch("https://wallhaven.cc/toplist");
+const { response, errors } = useFetch("https://github.com/stevenpersia/");
 ```
 
 #### Demo
