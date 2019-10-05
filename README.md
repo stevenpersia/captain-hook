@@ -225,6 +225,32 @@ const [open, toggle] = useToggle(false);
 
 SOON...
 
+### `useEventListener` - [View code](https://github.com/stevenpersia/captain-hook/blob/master/useEventListener.js)
+
+Useful hook if you want to create an event handler. 
+
+#### How to use
+
+Import hook :
+
+```js
+import { useEventListener } from "hooks/useEventListener";
+```
+
+Then use like this :
+
+```js
+useEventListener('DOMContentLoaded', event => {
+   console.log('DOM fully loaded and parsed');
+});
+```
+
+#### Demo
+
+SOON...
+
+---
+
 ## Star, Fork, Clone & Contribute
 
 Feel free to contribute on this repository. If my work helps you, please give me back with a star. This means a lot to me and keeps me going!
