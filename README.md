@@ -174,6 +174,30 @@ useTitle("My title");
 
 SOON...
 
+---
+
+### `useFetch` - [View code](https://github.com/stevenpersia/captain-hook/blob/master/useFetch.js)
+
+Useful hook if you want to fetch data from a url.
+
+#### How to use
+
+Import hook :
+
+```js
+import useFetch from "hooks/useFetch";
+```
+
+Then use like this :
+
+```js
+const { response, errors } = useFetch("https://wallhaven.cc/toplist");
+```
+
+#### Demo
+
+SOON...
+
 ## Star, Fork, Clone & Contribute
 
 Feel free to contribute on this repository. If my work helps you, please give me back with a star. This means a lot to me and keeps me going!
