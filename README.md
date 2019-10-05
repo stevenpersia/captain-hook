@@ -251,6 +251,40 @@ SOON...
 
 ---
 
+### `useFocusOutside` - [View code](https://github.com/stevenpersia/captain-hook/blob/master/useFocusOutside.js)
+
+Useful hook if you want some element to close or hide when it lost focus 
+from the user.
+
+#### How to use
+
+Import hook :
+
+```js
+import { useFocusOutside } from "hooks/useFocusOutside";
+```
+
+Then use like this :
+
+```js
+const ref = useRef(null);
+
+const closeOrHide = () => {
+  // some code to close or hide your element.
+}
+
+useFocusOutside(ref, closeOrHide);
+```
+
+> Note: you need to pass **ref** into the element that should be focussed 
+outside of.
+
+#### Demo
+
+SOON...
+
+---
+
 ## Star, Fork, Clone & Contribute
 
 Feel free to contribute on this repository. If my work helps you, please give me back with a star. This means a lot to me and keeps me going!
