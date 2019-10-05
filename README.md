@@ -7,6 +7,30 @@ Here a modest list of hooks that I use every day. I will add more next few days,
 
 ## Hooks
 
+### `useFetch` - [View code](https://github.com/stevenpersia/captain-hook/blob/master/useFetch.js)
+
+Useful hook if you want to fetch data from a url.
+
+#### How to use
+
+Import hook :
+
+```js
+import useFetch from "hooks/useFetch";
+```
+
+Then use like this :
+
+```js
+const { response, errors } = useFetch("https://wallhaven.cc/toplist");
+```
+
+#### Demo
+
+SOON...
+
+---
+
 ### `useFullscreen` - [View code](https://github.com/stevenpersia/captain-hook/blob/master/useFullscreen.js)
 
 Useful hook if you want to fullscreen an element of your page.
@@ -28,9 +52,9 @@ const { elementFS, triggerFS, exitFS, isFS } = useFullscreen();
 Then use like this :
 
 ```html
-<div ref={elementFS}>I want to fullscreen this div.</div>
-<button onClick={triggerFS}>Trigger fullscreen</button>
-<button onClick={exitFS}>Exit fullscreen</button>
+<div ref="{elementFS}">I want to fullscreen this div.</div>
+<button onClick="{triggerFS}">Trigger fullscreen</button>
+<button onClick="{exitFS}">Exit fullscreen</button>
 ```
 
 Check if fullscreen is triggered :
@@ -66,7 +90,7 @@ const [hoverRef, isHovered] = useHover();
 Then use like this :
 
 ```html
-<div ref={hoverRef}>{isHovered ? "Hovered !" : "Hover me !"}</div>
+<div ref="{hoverRef}">{isHovered ? "Hovered !" : "Hover me !"}</div>
 ```
 
 #### Demo
@@ -142,7 +166,7 @@ import useSwap from "hooks/useSwap";
 Then use like this :
 
 ```js
-useSwap({ name : "A" , init : "bootstrap"  });
+useSwap({ name: "A", init: "bootstrap" });
 // → {A: "name", bootstrap: "init"}
 ```
 
@@ -176,22 +200,25 @@ SOON...
 
 ---
 
-### `useFetch` - [View code](https://github.com/stevenpersia/captain-hook/blob/master/useFetch.js)
+### `useToggle` - [View code](https://github.com/stevenpersia/captain-hook/blob/master/useToggle.js)
 
-Useful hook if you want to fetch data from a url.
+Useful hook if you want display/hide something with toggle.
 
 #### How to use
 
 Import hook :
 
 ```js
-import useFetch from "hooks/useFetch";
+import useToggle from "hooks/useToggle";
 ```
 
 Then use like this :
 
-```js
-const { response, errors } = useFetch("https://wallhaven.cc/toplist");
+```
+const [open, toggle] = useToggle(false);
+
+<Button onClick={toggle}>Show filters</Button>;
+{open && <Filters />}
 ```
 
 #### Demo
