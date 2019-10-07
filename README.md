@@ -7,6 +7,30 @@ Here a modest list of hooks that I use every day. I will add more next few days,
 
 ## Hooks
 
+### `useFetch` - [View code](https://github.com/stevenpersia/captain-hook/blob/master/useFetch.js)
+
+Useful hook if you want to fetch data from a url.
+
+#### How to use
+
+Import hook :
+
+```js
+import useFetch from "hooks/useFetch";
+```
+
+Then use like this :
+
+```js
+const { response, errors } = useFetch("https://github.com/stevenpersia/");
+```
+
+#### Demo
+
+SOON...
+
+---
+
 ### `useFullscreen` - [View code](https://github.com/stevenpersia/captain-hook/blob/master/useFullscreen.js)
 
 Useful hook if you want to fullscreen an element of your page.
@@ -28,9 +52,9 @@ const { elementFS, triggerFS, exitFS, isFS } = useFullscreen();
 Then use like this :
 
 ```html
-<div ref={elementFS}>I want to fullscreen this div.</div>
-<button onClick={triggerFS}>Trigger fullscreen</button>
-<button onClick={exitFS}>Exit fullscreen</button>
+<div ref="{elementFS}">I want to fullscreen this div.</div>
+<button onClick="{triggerFS}">Trigger fullscreen</button>
+<button onClick="{exitFS}">Exit fullscreen</button>
 ```
 
 Check if fullscreen is triggered :
@@ -66,7 +90,7 @@ const [hoverRef, isHovered] = useHover();
 Then use like this :
 
 ```html
-<div ref={hoverRef}>{isHovered ? "Hovered !" : "Hover me !"}</div>
+<div ref="{hoverRef}">{isHovered ? "Hovered !" : "Hover me !"}</div>
 ```
 
 #### Demo
@@ -142,7 +166,7 @@ import useSwap from "hooks/useSwap";
 Then use like this :
 
 ```js
-useSwap({ name : "A" , init : "bootstrap"  });
+useSwap({ name: "A", init: "bootstrap" });
 // → {A: "name", bootstrap: "init"}
 ```
 
@@ -176,9 +200,94 @@ SOON...
 
 ---
 
+### `useToggle` - [View code](https://github.com/stevenpersia/captain-hook/blob/master/useToggle.js)
+
+Useful hook if you want display/hide something with toggle.
+
+#### How to use
+
+Import hook :
+
+```js
+import useToggle from "hooks/useToggle";
+```
+
+Then use like this :
+
+```
+const [open, toggle] = useToggle(false);
+
+<Button onClick={toggle}>Show filters</Button>;
+{open && <Filters />}
+```
+
+#### Demo
+
+SOON...
+
+### `useEventListener` - [View code](https://github.com/stevenpersia/captain-hook/blob/master/useEventListener.js)
+
+Useful hook if you want to create an event handler. 
+
+#### How to use
+
+Import hook :
+
+```js
+import { useEventListener } from "hooks/useEventListener";
+```
+
+Then use like this :
+
+```js
+useEventListener('DOMContentLoaded', event => {
+   console.log('DOM fully loaded and parsed');
+});
+```
+
+#### Demo
+
+SOON...
+
+---
+
+### `useFocusOutside` - [View code](https://github.com/stevenpersia/captain-hook/blob/master/useFocusOutside.js)
+
+Useful hook if you want some element to close or hide when it lost focus 
+from the user.
+
+#### How to use
+
+Import hook :
+
+```js
+import { useFocusOutside } from "hooks/useFocusOutside";
+```
+
+Then use like this :
+
+```js
+const ref = useRef(null);
+
+const closeOrHide = () => {
+  // some code to close or hide your element.
+}
+
+useFocusOutside(ref, closeOrHide);
+```
+
+> Note: you need to pass **ref** into the element that should be focussed 
+outside of.
+
+#### Demo
+
+SOON...
+
+---
+
 ### `useMeta` - [View code](https://github.com/stevenpersia/captain-hook/blob/master/useMeta.js)
 
-Useful hook if you want to set a specific Meta tags to the page.
+Useful hook if you want to set a specific title to page.
 
 #### How to use
 
@@ -188,9 +297,9 @@ Import hook :
 import useMeta from "hooks/useMeta";
 ```
 
-Then use like this :
+`useMeta` take an array of meta objects with the `name` and `content`
 
-useMeta take an array of objects with the `name` and `content` of the Meta
+Then use like this :
 
 ```js
 useMeta([{name : 'description' , content: 'My beautiful page'} , {name : 'author' content:'John Doe'}]);
@@ -199,6 +308,9 @@ useMeta([{name : 'description' , content: 'My beautiful page'} , {name : 'author
 #### Demo
 
 SOON...
+
+---
+
 
 ## Star, Fork, Clone & Contribute
 
