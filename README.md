@@ -174,6 +174,32 @@ useTitle("My title");
 
 SOON...
 
+---
+
+### `useMeta` - [View code](https://github.com/stevenpersia/captain-hook/blob/master/useMeta.js)
+
+Useful hook if you want to set a specific Meta tags to the page.
+
+#### How to use
+
+Import hook :
+
+```js
+import useMeta from "hooks/useMeta";
+```
+
+Then use like this :
+
+useMeta take an array of objects with the `name` and `content` of the Meta
+
+```js
+useMeta([{name : 'description' , content: 'My beautiful page'} , {name : 'author' content:'John Doe'}]);
+```
+
+#### Demo
+
+SOON...
+
 ## Star, Fork, Clone & Contribute
 
 Feel free to contribute on this repository. If my work helps you, please give me back with a star. This means a lot to me and keeps me going!
