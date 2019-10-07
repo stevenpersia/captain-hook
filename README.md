@@ -285,9 +285,41 @@ SOON...
 
 ---
 
+
+### `useInfiniteScroll` - [View code](https://github.com/stevenpersia/captain-hook/blob/master/useInfiniteScroll.js)
+
+Useful hook if you want to add the infinite scroll feature to your website.
+
+#### How to use
+
+Import hook :
+
+```js
+
+import useInfiniteScroll from "hooks/useInfiniteScroll";
+
+```
+
+Then use like this :
+
+```js
+
+const [isFetching, setIsFetching] = useInfiniteScroll(fetchMoreListItems);
+
+function fetchMoreListItems() {
+  // Some code for adding content to each user is at the bottom of the page
+}
+```
+
+#### Demo
+
+SOON...
+
+---
+
 ### `useMeta` - [View code](https://github.com/stevenpersia/captain-hook/blob/master/useMeta.js)
 
-Useful hook if you want to set a specific title to page.
+Useful hook if you want to set a meta tags to the page.
 
 #### How to use
 
@@ -310,8 +342,6 @@ useMeta([{name : 'description' , content: 'My beautiful page'} , {name : 'author
 SOON...
 
 ---
-
-
 ## Star, Fork, Clone & Contribute
 
 Feel free to contribute on this repository. If my work helps you, please give me back with a star. This means a lot to me and keeps me going!
