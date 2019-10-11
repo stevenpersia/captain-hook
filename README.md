@@ -285,24 +285,27 @@ SOON...
 
 ---
 
-### `useMeta` - [View code](https://github.com/stevenpersia/captain-hook/blob/master/useMeta.js)
+### `useInfiniteScroll` - [View code](https://github.com/stevenpersia/captain-hook/blob/master/useInfiniteScroll.js)
 
-Useful hook if you want to set a specific title to page.
+Useful hook if you want to add the infinite scroll feature to your website.
 
 #### How to use
 
 Import hook :
 
 ```js
-import useMeta from "hooks/useMeta";
-```
+import useInfiniteScroll from "hooks/useInfiniteScroll";
 
-`useMeta` take an array of meta objects with the `name` and `content`
+```
 
 Then use like this :
 
 ```js
-useMeta([{name : 'description' , content: 'My beautiful page'} , {name : 'author' content:'John Doe'}]);
+const [isFetching, setIsFetching] = useInfiniteScroll(fetchMoreListItems);
+
+function fetchMoreListItems() {
+  // Some code for adding content to each user is at the bottom of the page
+}
 ```
 
 #### Demo
@@ -310,7 +313,27 @@ useMeta([{name : 'description' , content: 'My beautiful page'} , {name : 'author
 SOON...
 
 ---
+### `useMeta` - [View code](https://github.com/stevenpersia/captain-hook/blob/master/useMeta.js)
 
+Useful hook if you want to set a meta tags to the page.
+#### How to use
+Import hook :
+
+```js
+import useMeta from "hooks/useMeta";
+```
+`useMeta` take an array of meta objects with the `name` and `content`
+
+Then use like this :
+
+```js
+useMeta([{name : 'description' , content: 'My beautiful page'} , {name : 'author' content:'John Doe'}]);
+```
+#### Demo
+
+SOON...
+
+---
 
 ## Star, Fork, Clone & Contribute
 
