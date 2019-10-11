@@ -285,6 +285,10 @@ SOON...
 
 ---
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> dd32c7e96d319fa35d402fca4af52a75cee9806b
 ### `useInfiniteScroll` - [View code](https://github.com/stevenpersia/captain-hook/blob/master/useInfiniteScroll.js)
 
 Useful hook if you want to add the infinite scroll feature to your website.
@@ -294,6 +298,10 @@ Useful hook if you want to add the infinite scroll feature to your website.
 Import hook :
 
 ```js
+<<<<<<< HEAD
+=======
+
+>>>>>>> dd32c7e96d319fa35d402fca4af52a75cee9806b
 import useInfiniteScroll from "hooks/useInfiniteScroll";
 
 ```
@@ -301,6 +309,10 @@ import useInfiniteScroll from "hooks/useInfiniteScroll";
 Then use like this :
 
 ```js
+<<<<<<< HEAD
+=======
+
+>>>>>>> dd32c7e96d319fa35d402fca4af52a75cee9806b
 const [isFetching, setIsFetching] = useInfiniteScroll(fetchMoreListItems);
 
 function fetchMoreListItems() {
@@ -315,13 +327,23 @@ SOON...
 ---
 ### `useMeta` - [View code](https://github.com/stevenpersia/captain-hook/blob/master/useMeta.js)
 
+<<<<<<< HEAD
 Useful hook if you want to set a meta tags to the page.
 #### How to use
+=======
+### `useMeta` - [View code](https://github.com/stevenpersia/captain-hook/blob/master/useMeta.js)
+
+Useful hook if you want to set a meta tags to the page.
+
+#### How to use
+
+>>>>>>> dd32c7e96d319fa35d402fca4af52a75cee9806b
 Import hook :
 
 ```js
 import useMeta from "hooks/useMeta";
 ```
+<<<<<<< HEAD
 `useMeta` take an array of meta objects with the `name` and `content`
 
 Then use like this :
@@ -335,6 +357,22 @@ SOON...
 
 ---
 
+=======
+
+`useMeta` take an array of meta objects with the `name` and `content`
+
+Then use like this :
+
+```js
+useMeta([{name : 'description' , content: 'My beautiful page'} , {name : 'author' content:'John Doe'}]);
+```
+
+#### Demo
+
+SOON...
+
+---
+>>>>>>> dd32c7e96d319fa35d402fca4af52a75cee9806b
 ## Star, Fork, Clone & Contribute
 
 Feel free to contribute on this repository. If my work helps you, please give me back with a star. This means a lot to me and keeps me going!
