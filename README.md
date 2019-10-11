@@ -313,7 +313,32 @@ function fetchMoreListItems() {
 SOON...
 
 ---
+### `useFavicon` - [View code](https://github.com/stevenpersia/captain-hook/blob/master/useFavicon.js)
 
+Useful hook if you want to set a specific favicon to the page.
+
+#### How to use
+
+Import hook :
+
+```js
+import useFavicon from "hooks/useFavicon";
+```
+
+Then use like this :
+
+```js
+useFavicon("/path/image.png","image/png");
+```
+result :
+```html
+<link rel="icon" type="image/png" href="/path/image.png">
+```
+#### Demo
+
+SOON...
+
+---
 ## Star, Fork, Clone & Contribute
 
 Feel free to contribute on this repository. If my work helps you, please give me back with a star. This means a lot to me and keeps me going!
