@@ -225,6 +225,8 @@ const [open, toggle] = useToggle(false);
 
 SOON...
 
+---
+
 ### `useEventListener` - [View code](https://github.com/stevenpersia/captain-hook/blob/master/useEventListener.js)
 
 Useful hook if you want to create an event handler. 
