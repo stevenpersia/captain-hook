@@ -3,7 +3,7 @@
 
 ## Overview
 
-Here a modest list of hooks that I use every day. I will add more next few days, keep watching. And if you have some good hooks I would love to add them. So feel free to open a pull request.
+Here is a modest list of hooks that I use every day. I will add more in the next few days, keep watching. And if you have some good hooks I would love to add them. So feel free to open a pull request.
 
 ## Hooks
 
