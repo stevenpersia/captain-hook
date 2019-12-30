@@ -223,7 +223,7 @@ const [open, toggle] = useToggle(false);
 
 #### Demo
 
-SOON...
+[View in CodeSandbox](https://codesandbox.io/s/captain-hookusetoggle-bqe9w)
 
 ---
 
