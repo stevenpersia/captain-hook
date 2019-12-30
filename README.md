@@ -147,7 +147,7 @@ useSlug("Omégà! Pèlô Fùll");
 
 #### Demo
 
-SOON...
+[View in CodeSandbox](https://codesandbox.io/s/captain-hookuseslug-ktcuk)
 
 ---
 
