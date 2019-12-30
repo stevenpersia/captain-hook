@@ -172,7 +172,7 @@ useSwap({ name: "A", init: "bootstrap" });
 
 #### Demo
 
-SOON...
+[View in CodeSandbox](https://codesandbox.io/s/captain-hookuseswap-dvm2b)
 
 ---
 
