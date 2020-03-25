@@ -27,7 +27,7 @@ const { response, errors } = useFetch("https://github.com/stevenpersia/");
 
 #### Demo
 
-SOON...
+[View in CodeSandbox](https://codesandbox.io/s/captain-hookusefetch-2qmcr)
 
 ---
 
