@@ -196,7 +196,7 @@ useTitle("My title");
 
 #### Demo
 
-SOON...
+[View in CodeSandbox](https://codesandbox.io/s/captain-hookusetitle-py3uz)
 
 ---
 
