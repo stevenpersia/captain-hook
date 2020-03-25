@@ -90,12 +90,12 @@ const [hoverRef, isHovered] = useHover();
 Then use like this :
 
 ```html
-<div ref="{hoverRef}">{isHovered ? "Hovered !" : "Hover me !"}</div>
+<div ref={hoverRef}>{isHovered ? "Hovered !" : "Hover me !"}</div>
 ```
 
 #### Demo
 
-SOON...
+[View in CodeSandbox](https://codesandbox.io/s/captain-hookusehover-ckmz2)
 
 ---
 
