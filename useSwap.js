@@ -1,10 +1,6 @@
-// Swap the keys and values of a given object.
- 
 const useSwap = obj => {
-	var swapped = {};
-	for (var key in obj) {
-	  swapped[obj[key]] = key;
-	}
+	let swapped = {};
+	for (let key in obj) swapped[obj[key]] = key;
 	return swapped;
   };
 
