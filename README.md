@@ -116,13 +116,13 @@ Then use like this :
 ```js
 const hKeyPressed = useKeyPress("h");
 
-console.log(hKeyPressed & "Hello !");
+console.log(hKeyPressed && "Hello !");
 // → Hello !
 ```
 
 #### Demo
 
-SOON...
+[View in CodeSandbox](https://codesandbox.io/s/captain-hookusekeypress-neto1)
 
 ---
 
