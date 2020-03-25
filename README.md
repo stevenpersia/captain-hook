@@ -9,7 +9,7 @@ Here is a modest list of hooks that I use every day. I will add more in the next
 
 ### `useFetch` - [View code](https://github.com/stevenpersia/captain-hook/blob/master/useFetch.js)
 
-Useful hook if you want to fetch data from a url.
+Useful hook if you want to fetch data.
 
 #### How to use
 
