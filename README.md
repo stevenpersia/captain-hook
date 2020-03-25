@@ -31,7 +31,7 @@ const { response, errors } = useFetch("https://github.com/stevenpersia/");
 
 ---
 
-### `useFullscreen` - [View code](https://github.com/stevenpersia/captain-hook/blob/master/useFullscreen.js)
+### `useFullScreen` - [View code](https://github.com/stevenpersia/captain-hook/blob/master/useFullScreen.js)
 
 Useful hook if you want to fullscreen an element of your page.
 
@@ -40,21 +40,21 @@ Useful hook if you want to fullscreen an element of your page.
 Import hook :
 
 ```js
-import useFullscreen from "hooks/useFullscreen";
+import useFullScreen from "hooks/useFullScreen";
 ```
 
 Add :
 
 ```js
-const { elementFS, triggerFS, exitFS, isFS } = useFullscreen();
+const { elementFS, triggerFS, exitFS, isFS } = useFullScreen();
 ```
 
 Then use like this :
 
 ```html
-<div ref="{elementFS}">I want to fullscreen this div.</div>
-<button onClick="{triggerFS}">Trigger fullscreen</button>
-<button onClick="{exitFS}">Exit fullscreen</button>
+<div ref={elementFS}>I want to fullscreen this div.</div>
+<button onClick={triggerFS}>Trigger fullscreen</button>
+<button onClick={exitFS}>Exit fullscreen</button>
 ```
 
 Check if fullscreen is triggered :
@@ -65,7 +65,7 @@ console.log(isFS);
 
 #### Demo
 
-SOON...
+[View in CodeSandbox](https://codesandbox.io/s/captain-hookusefullscreen-u6uih)
 
 ---
 
