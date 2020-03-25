@@ -1,37 +1,37 @@
 import { useState, useRef } from "react";
 
-const useFullscreen = () => {
-	const [isFS, setIsFS] = useState(false);
-	const elementFS = useRef();
+const useFullScreen = () => {
+  const [isFS, setIsFS] = useState(false);
+  const elementFS = useRef();
 
-	const triggerFS = () => {
-		const el = elementFS.current;
+  const triggerFS = () => {
+    const el = elementFS.current;
 
-		if (el) {
-			el.requestFullscreen && el.requestFullscreen();
-			el.mozRequestFullScreen && el.mozRequestFullScreen();
-			el.webkitRequestFullscreen && el.webkitRequestFullscreen();
-			el.msRequestFullscreen && el.msRequestFullscreen();
-		}
+    if (el) {
+      el.requestFullscreen && el.requestFullscreen();
+      el.mozRequestFullScreen && el.mozRequestFullScreen();
+      el.webkitRequestFullscreen && el.webkitRequestFullscreen();
+      el.msRequestFullscreen && el.msRequestFullscreen();
+    }
 
-		setIsFS(true);
-	};
+    setIsFS(true);
+  };
 
-	const exitFS = () => {
-		const elFS = elementFS.current.ownerDocument.fullscreen;
+  const exitFS = () => {
+    const elFS = elementFS.current.ownerDocument.fullscreen;
 
-		if (isFS && elFS) {
-			document.exitFullscreen();
-			document.exitFullscreen && document.exitFullscreen();
-			document.mozCancelFullScreen && document.mozCancelFullScreen();
-			document.webkitExitFullscreen && document.webkitExitFullscreen();
-			document.msExitFullscreen && document.msExitFullscreen();
-		}
+    if (isFS && elFS) {
+      document.exitFullscreen();
+      document.exitFullscreen && document.exitFullscreen();
+      document.mozCancelFullScreen && document.mozCancelFullScreen();
+      document.webkitExitFullscreen && document.webkitExitFullscreen();
+      document.msExitFullscreen && document.msExitFullscreen();
+    }
 
-		setIsFS(false);
-	};
+    setIsFS(false);
+  };
 
-	return { elementFS, triggerFS, exitFS, isFS };
+  return { elementFS, triggerFS, exitFS, isFS };
 };
 
-export default useFullscreen;
+export default useFullScreen;
