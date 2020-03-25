@@ -332,13 +332,10 @@ Then use like this :
 ```js
 useFavicon("/path/image.png","image/png");
 ```
-result :
-```html
-<link rel="icon" type="image/png" href="/path/image.png">
-```
+
 #### Demo
 
-SOON...
+[View in CodeSandbox](https://codesandbox.io/s/captain-hookusefavicon-1q52i)
 
 ---
 ## Star, Fork, Clone & Contribute
