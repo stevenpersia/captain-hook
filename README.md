@@ -214,7 +214,7 @@ import useToggle from "hooks/useToggle";
 
 Then use like this :
 
-```
+```js
 const [open, toggle] = useToggle(false);
 
 <Button onClick={toggle}>Show filters</Button>;
