@@ -229,7 +229,7 @@ const [open, toggle] = useToggle(false);
 
 ### `useEventListener` - [View code](https://github.com/stevenpersia/captain-hook/blob/master/useEventListener.js)
 
-Useful hook if you want to create an event handler. 
+Useful hook if you want to create an event handler.
 
 #### How to use
 
@@ -241,15 +241,19 @@ import { useEventListener } from "hooks/useEventListener";
 
 Then use like this :
 
-```js
-useEventListener('DOMContentLoaded', event => {
-   console.log('DOM fully loaded and parsed');
-});
+```jsx
+const [coords, setCoords] = useState({ x: 0, y: 0 });
+
+useEventListener("mousemove", ({ clientX, clientY }) =>
+	setCoords({ x: clientX, y: clientY })
+);
+
+console.log(coords);
 ```
 
 #### Demo
 
-SOON...
+[View in CodeSandbox](https://codesandbox.io/s/captain-hookuseeventlistener-rtrkc)
 
 ---
 
