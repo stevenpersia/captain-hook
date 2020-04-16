@@ -15,13 +15,13 @@ Useful hook if you want to fetch data.
 
 Import hook :
 
-```js
+```jsx
 import useFetch from "hooks/useFetch";
 ```
 
 Then use like this :
 
-```js
+```jsx
 const { response, errors } = useFetch("https://github.com/stevenpersia/");
 ```
 
@@ -39,19 +39,19 @@ Useful hook if you want to fullscreen an element of your page.
 
 Import hook :
 
-```js
+```jsx
 import useFullScreen from "hooks/useFullScreen";
 ```
 
 Add :
 
-```js
+```jsx
 const { elementFS, triggerFS, exitFS, isFS } = useFullScreen();
 ```
 
 Then use like this :
 
-```html
+```jsx
 <div ref={elementFS}>I want to fullscreen this div.</div>
 <button onClick={triggerFS}>Trigger fullscreen</button>
 <button onClick={exitFS}>Exit fullscreen</button>
@@ -59,7 +59,7 @@ Then use like this :
 
 Check if fullscreen is triggered :
 
-```js
+```jsx
 console.log(isFS);
 ```
 
@@ -77,19 +77,19 @@ Useful hook if you want to detect when the mouse is hovering an element.
 
 Import hook :
 
-```js
+```jsx
 import useHover from "hooks/useHover";
 ```
 
 Add :
 
-```js
+```jsx
 const [hoverRef, isHovered] = useHover();
 ```
 
 Then use like this :
 
-```html
+```jsx
 <div ref={hoverRef}>{isHovered ? "Hovered !" : "Hover me !"}</div>
 ```
 
@@ -107,13 +107,13 @@ Useful hook if you want to detect when user is pressing a specific key.
 
 Import hook :
 
-```js
+```jsx
 import useKeyPress from "hooks/useKeyPress";
 ```
 
 Then use like this :
 
-```js
+```jsx
 const hKeyPressed = useKeyPress("h");
 
 console.log(hKeyPressed && "Hello !");
@@ -134,13 +134,13 @@ Useful hook if you want to slug content for urls.
 
 Import hook :
 
-```js
+```jsx
 import useSlug from "hooks/useSlug";
 ```
 
 Then use like this :
 
-```js
+```jsx
 useSlug("Omégà! Pèlô Fùll");
 // → omega-pelo-full
 ```
@@ -159,13 +159,13 @@ Useful hook if you want to swap the keys and values of a given object.
 
 Import hook :
 
-```js
+```jsx
 import useSwap from "hooks/useSwap";
 ```
 
 Then use like this :
 
-```js
+```jsx
 useSwap({ name: "A", init: "bootstrap" });
 // → {A: "name", bootstrap: "init"}
 ```
@@ -184,13 +184,13 @@ Useful hook if you want to set a specific title to page.
 
 Import hook :
 
-```js
+```jsx
 import useTitle from "hooks/useTitle";
 ```
 
 Then use like this :
 
-```js
+```jsx
 useTitle("My title");
 ```
 
@@ -208,17 +208,20 @@ Useful hook if you want display/hide something with toggle.
 
 Import hook :
 
-```js
+```jsx
 import useToggle from "hooks/useToggle";
 ```
 
 Then use like this :
 
-```js
+```jsx
 const [open, toggle] = useToggle(false);
 
 <Button onClick={toggle}>Show filters</Button>;
-{open && <Filters />}
+
+{
+	open && <Filters />;
+}
 ```
 
 #### Demo
@@ -235,7 +238,7 @@ Useful hook if you want to create an event handler.
 
 Import hook :
 
-```js
+```jsx
 import { useEventListener } from "hooks/useEventListener";
 ```
 
@@ -259,31 +262,31 @@ console.log(coords);
 
 ### `useFocusOutside` - [View code](https://github.com/stevenpersia/captain-hook/blob/master/useFocusOutside.js)
 
-Useful hook if you want some element to close or hide when it lost focus 
+Useful hook if you want some element to close or hide when it lost focus
 from the user.
 
 #### How to use
 
 Import hook :
 
-```js
+```jsx
 import { useFocusOutside } from "hooks/useFocusOutside";
 ```
 
 Then use like this :
 
-```js
+```jsx
 const ref = useRef(null);
 
 const closeOrHide = () => {
-  // some code to close or hide your element.
-}
+	// some code to close or hide your element.
+};
 
 useFocusOutside(ref, closeOrHide);
 ```
 
-> Note: you need to pass **ref** into the element that should be focussed 
-outside of.
+> Note: you need to pass **ref** into the element that should be focussed
+> outside of.
 
 #### Demo
 
@@ -299,18 +302,17 @@ Useful hook if you want to add the infinite scroll feature to your website.
 
 Import hook :
 
-```js
+```jsx
 import useInfiniteScroll from "hooks/useInfiniteScroll";
-
 ```
 
 Then use like this :
 
-```js
+```jsx
 const [isFetching, setIsFetching] = useInfiniteScroll(fetchMoreListItems);
 
 function fetchMoreListItems() {
-  // Some code for adding content to each user is at the bottom of the page
+	// Some code for adding content to each user is at the bottom of the page
 }
 ```
 
@@ -319,6 +321,7 @@ function fetchMoreListItems() {
 SOON...
 
 ---
+
 ### `useFavicon` - [View code](https://github.com/stevenpersia/captain-hook/blob/master/useFavicon.js)
 
 Useful hook if you want to set a specific favicon to the page.
@@ -327,14 +330,14 @@ Useful hook if you want to set a specific favicon to the page.
 
 Import hook :
 
-```js
+```jsx
 import useFavicon from "hooks/useFavicon";
 ```
 
 Then use like this :
 
-```js
-useFavicon("/path/image.png","image/png");
+```jsx
+useFavicon("/path/image.png", "image/png");
 ```
 
 #### Demo
@@ -342,6 +345,7 @@ useFavicon("/path/image.png","image/png");
 [View in CodeSandbox](https://codesandbox.io/s/captain-hookusefavicon-1q52i)
 
 ---
+
 ## Star, Fork, Clone & Contribute
 
 Feel free to contribute on this repository. If my work helps you, please give me back with a star. This means a lot to me and keeps me going!
