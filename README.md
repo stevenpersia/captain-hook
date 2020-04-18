@@ -309,16 +309,16 @@ import useInfiniteScroll from "hooks/useInfiniteScroll";
 Then use like this :
 
 ```jsx
-const [isFetching, setIsFetching] = useInfiniteScroll(fetchMoreListItems);
+const [isFetching, setIsFetching] = useInfiniteScroll(fetchData);
 
-function fetchMoreListItems() {
-	// Some code for adding content to each user is at the bottom of the page
-}
+const fetchData = () => {
+	// ...
+};
 ```
 
 #### Demo
 
-SOON...
+[View in CodeSandbox](https://codesandbox.io/s/captain-hookuseinfinitescroll-5jd3n)
 
 ---
 
