@@ -239,7 +239,7 @@ Useful hook if you want to create an event handler.
 Import hook :
 
 ```jsx
-import { useEventListener } from "hooks/useEventListener";
+import useEventListener from "hooks/useEventListener";
 ```
 
 Then use like this :
@@ -270,7 +270,7 @@ from the user.
 Import hook :
 
 ```jsx
-import { useFocusOutside } from "hooks/useFocusOutside";
+import useFocusOutside from "hooks/useFocusOutside";
 ```
 
 Then use like this :
