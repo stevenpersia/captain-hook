@@ -260,40 +260,6 @@ console.log(coords);
 
 ---
 
-### `useFocusOutside` - [View code](https://github.com/stevenpersia/captain-hook/blob/master/useFocusOutside.js)
-
-Useful hook if you want some element to close or hide when it lost focus
-from the user.
-
-#### How to use
-
-Import hook :
-
-```jsx
-import useFocusOutside from "hooks/useFocusOutside";
-```
-
-Then use like this :
-
-```jsx
-const ref = useRef(null);
-
-const closeOrHide = () => {
-	// some code to close or hide your element.
-};
-
-useFocusOutside(ref, closeOrHide);
-```
-
-> Note: you need to pass **ref** into the element that should be focussed
-> outside of.
-
-#### Demo
-
-SOON...
-
----
-
 ### `useInfiniteScroll` - [View code](https://github.com/stevenpersia/captain-hook/blob/master/useInfiniteScroll.js)
 
 Useful hook if you want to add the infinite scroll feature to your website.
