@@ -1,4 +1,4 @@
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 
 const useFullScreen = () => {
   const [isFS, setIsFS] = useState(false);
@@ -13,8 +13,6 @@ const useFullScreen = () => {
       el.webkitRequestFullscreen && el.webkitRequestFullscreen();
       el.msRequestFullscreen && el.msRequestFullscreen();
     }
-
-    setIsFS(true);
   };
 
   const exitFS = () => {
@@ -27,9 +25,17 @@ const useFullScreen = () => {
       document.webkitExitFullscreen && document.webkitExitFullscreen();
       document.msExitFullscreen && document.msExitFullscreen();
     }
-
-    setIsFS(false);
   };
+  
+  useEffect(() => {
+    const eventHandler = () => {
+      setIsFS((val) => !val);
+    };
+    document.addEventListener("fullscreenchange", eventHandler);
+    return () => {
+      document.removeEventListener("fullscreenchange", eventHandler);
+    };
+  }, [setIsFS])
 
   return { elementFS, triggerFS, exitFS, isFS };
 };
