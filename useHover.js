@@ -1,11 +1,11 @@
 import { useEffect, useRef, useState } from "react";
 
 const useHover = () => {
-	const [value, setValue] = useState(false);
+	const [value, setValue] = useState({hover: false, event: null});
 	const ref = useRef();
 
-	const handleMouseOver = () => setValue(true);
-	const handleMouseOut = () => setValue(false);
+	const handleMouseOver = (e) => setValue({hover: true, event: e});
+	const handleMouseOut = () => setValue({hover: false, event: null});
 
 	useEffect(() => {
 		const node = ref.current;
@@ -21,7 +21,7 @@ const useHover = () => {
 		}
 	}, [ref.current]);
 
-	return [ref, value];
+	return [ref, value.hover, value.event];
 };
 
 export default useHover;
