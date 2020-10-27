@@ -7,7 +7,7 @@ Here is a modest list of hooks that I use every day. I will add more in the next
 
 ## Hooks
 
-### `useFetch` - [View code](https://github.com/stevenpersia/captain-hook/blob/master/useFetch.js)
+### `useFetch` - [View code](useFetch.js)
 
 Useful hook if you want to fetch data.
 
@@ -31,7 +31,7 @@ const { response, errors } = useFetch("https://github.com/stevenpersia/");
 
 ---
 
-### `useFullScreen` - [View code](https://github.com/stevenpersia/captain-hook/blob/master/useFullScreen.js)
+### `useFullScreen` - [View code](useFullScreen.js)
 
 Useful hook if you want to fullscreen an element of your page.
 
@@ -69,7 +69,7 @@ console.log(isFS);
 
 ---
 
-### `useHover` - [View code](https://github.com/stevenpersia/captain-hook/blob/master/useHover.js)
+### `useHover` - [View code](useHover.js)
 
 Useful hook if you want to detect when the mouse is hovering an element.
 
@@ -99,7 +99,7 @@ Then use like this :
 
 ---
 
-### `useKeyPress` - [View code](https://github.com/stevenpersia/captain-hook/blob/master/useKeyPress.js)
+### `useKeyPress` - [View code](useKeyPress.js)
 
 Useful hook if you want to detect when user is pressing a specific key.
 
@@ -126,7 +126,7 @@ console.log(hKeyPressed && "Hello !");
 
 ---
 
-### `useSlug` - [View code](https://github.com/stevenpersia/captain-hook/blob/master/useSlug.js)
+### `useSlug` - [View code](useSlug.js)
 
 Useful hook if you want to slug content for urls.
 
@@ -151,7 +151,7 @@ useSlug("Omégà! Pèlô Fùll");
 
 ---
 
-### `useSwap` - [View code](https://github.com/stevenpersia/captain-hook/blob/master/useSwap.js)
+### `useSwap` - [View code](useSwap.js)
 
 Useful hook if you want to swap the keys and values of a given object.
 
@@ -176,7 +176,7 @@ useSwap({ name: "A", init: "bootstrap" });
 
 ---
 
-### `useTitle` - [View code](https://github.com/stevenpersia/captain-hook/blob/master/useTitle.js)
+### `useTitle` - [View code](useTitle.js)
 
 Useful hook if you want to set a specific title to page.
 
@@ -200,7 +200,7 @@ useTitle("My title");
 
 ---
 
-### `useToggle` - [View code](https://github.com/stevenpersia/captain-hook/blob/master/useToggle.js)
+### `useToggle` - [View code](useToggle.js)
 
 Useful hook if you want display/hide something with toggle.
 
@@ -230,7 +230,7 @@ const [open, toggle] = useToggle(false);
 
 ---
 
-### `useEventListener` - [View code](https://github.com/stevenpersia/captain-hook/blob/master/useEventListener.js)
+### `useEventListener` - [View code](useEventListener.js)
 
 Useful hook if you want to create an event handler.
 
@@ -260,7 +260,7 @@ console.log(coords);
 
 ---
 
-### `useInfiniteScroll` - [View code](https://github.com/stevenpersia/captain-hook/blob/master/useInfiniteScroll.js)
+### `useInfiniteScroll` - [View code](useInfiniteScroll.js)
 
 Useful hook if you want to add the infinite scroll feature to your website.
 
@@ -288,7 +288,7 @@ const fetchData = () => {
 
 ---
 
-### `useFavicon` - [View code](https://github.com/stevenpersia/captain-hook/blob/master/useFavicon.js)
+### `useFavicon` - [View code](useFavicon.js)
 
 Useful hook if you want to set a specific favicon to the page.
 
@@ -312,7 +312,7 @@ useFavicon("/path/image.png", "image/png");
 
 ---
 
-### `useDebounce` - [View code](https://github.com/stevenpersia/captain-hook/blob/master/useDebounce.js)
+### `useDebounce` - [View code](useDebounce.js)
 
 Useful hook if you want to set a debounced value.
 
