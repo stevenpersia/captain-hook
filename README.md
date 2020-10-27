@@ -312,6 +312,31 @@ useFavicon("/path/image.png", "image/png");
 
 ---
 
+### `useDebounce` - [View code](https://github.com/stevenpersia/captain-hook/blob/master/useDebounce.js)
+
+Useful hook if you want to set a debounced value.
+
+#### How to use
+
+Import hook :
+
+```jsx
+import useDebounce from "hooks/useDebounce";
+```
+
+Then use like this :
+
+```jsx
+const delay = 1000;
+const debouncedValue = useDebounce(value, delay);
+```
+
+#### Demo
+
+[View in CodeSandbox](https://codesandbox.io/s/captain-hookusedebounce-m199m)
+
+---
+
 ## Star, Fork, Clone & Contribute
 
 Feel free to contribute on this repository. If my work helps you, please give me back with a star. This means a lot to me and keeps me going!
