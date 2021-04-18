@@ -126,56 +126,6 @@ console.log(hKeyPressed && "Hello !");
 
 ---
 
-### `useSlug` - [View code](https://github.com/stevenpersia/captain-hook/blob/master/useSlug.js)
-
-Useful hook if you want to slug content for urls.
-
-#### How to use
-
-Import hook :
-
-```jsx
-import useSlug from "hooks/useSlug";
-```
-
-Then use like this :
-
-```jsx
-useSlug("Omégà! Pèlô Fùll");
-// → omega-pelo-full
-```
-
-#### Demo
-
-[View in CodeSandbox](https://codesandbox.io/s/captain-hookuseslug-ktcuk)
-
----
-
-### `useSwap` - [View code](https://github.com/stevenpersia/captain-hook/blob/master/useSwap.js)
-
-Useful hook if you want to swap the keys and values of a given object.
-
-#### How to use
-
-Import hook :
-
-```jsx
-import useSwap from "hooks/useSwap";
-```
-
-Then use like this :
-
-```jsx
-useSwap({ name: "A", init: "bootstrap" });
-// → {A: "name", bootstrap: "init"}
-```
-
-#### Demo
-
-[View in CodeSandbox](https://codesandbox.io/s/captain-hookuseswap-dvm2b)
-
----
-
 ### `useTitle` - [View code](https://github.com/stevenpersia/captain-hook/blob/master/useTitle.js)
 
 Useful hook if you want to set a specific title to page.
