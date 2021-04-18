@@ -84,13 +84,13 @@ import useHover from "hooks/useHover";
 Add :
 
 ```jsx
-const [hoverRef, isHovered] = useHover();
+const [hoverRef, isHovered, event] = useHover();
 ```
 
 Then use like this :
 
 ```jsx
-<div ref={hoverRef}>{isHovered ? "Hovered !" : "Hover me !"}</div>
+<div ref={hoverRef}>{isHovered ? "Hovered ! at " + [event.pageX, event.pageY].join(",") : "Hover me !"}</div>
 ```
 
 #### Demo
